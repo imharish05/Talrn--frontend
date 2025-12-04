@@ -1,16 +1,78 @@
-# React + Vite
+Developer Directory App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Full-Stack Developer Directory application built with React (frontend) and Node.js + Express + MongoDB (backend). The app allows users to add developers, view a developer directory, and search/filter by role or tech stack.
+## Features
 
-Currently, two official plugins are available:
+-   Add new developers (Name, Role, Tech Stack, Experience)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   View all developers displayed in a clean table
 
-## React Compiler
+-  Search/filter developers by:
+    - Name
+    - Role
+    - Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   Responsive UI (Mobile + Desktop)
 
-## Expanding the ESLint configuration
+-   Toast notifications for success and errors
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   REST API with MongoDB integration
+
+-    Modern UI using Material UI + TailwindCSS
+
+
+## Tech Stack
+
+**Client:** React, Axios, Material UI, React Toastify, TailwindCSS
+
+**Server:** Node, Express, MonogoDB
+
+
+## Installation
+
+Backend 
+
+```bash
+git clone https://github.com/imharish05/Talrn-backend.git
+cd backend
+```
+Create .env file
+```bash
+PORT=5000
+DB_URL=mongodb+srv://harish05082004_db_user:57rB4Rq7SRwlzR9S@cluster0.cabgiss.mongodb.net/TalrnTask
+```
+Run the backend server
+```bash
+npm start
+```
+Frontend 
+
+```bash
+git clone https://github.com/imharish05/Talrn--frontend.git
+cd frontend
+
+```
+
+Start server 
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+    
+## Responsive Design
+- The UI automatically adjusts for:
+    -   Mobile view
+    - Tablet
+    - Desktop
+## License
+
+This project is open-source and free to use.
+
+
+## Validation
+- All fields are required
+- Experience must be a valid number (0–50)
+- Tech stack is comma-separated (converted to array)
