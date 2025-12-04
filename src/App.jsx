@@ -15,7 +15,7 @@ function App() {
   const [error, setError] = useState(false);
   const [developer, setDeveloper] = useState([]);
   const [search, setSearch] = useState([]);
-  const API_URL = "https://talrn-backend-1.onrender.com/developers";
+  const API_URL = "https://talrn-backend-nm58.onrender.com/developers";
 
   const fetchDevelopers = async () => {
     try {
