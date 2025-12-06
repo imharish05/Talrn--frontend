@@ -114,7 +114,7 @@ Open your browser: http://localhost:5173
 
 ## Hosted URLs
 
-- **Frontend:** [https://talrn-frontend.vercel.app](https://talrn-frontend.vercel.app)  
+- **Frontend:** [[https://talrn-frontend.vercel.app](https://talrnfrontend-c7yly71g6-imharish05s-projects.vercel.app/)]([https://talrn-frontend.vercel.app](https://talrnfrontend-c7yly71g6-imharish05s-projects.vercel.app/))  
 - **Backend API:** [https://talrn-backend-nm58.onrender.com](https://talrn-backend-nm58.onrender.com)
 
 
