@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Loader = () => {
   return (
     <StyledWrapper>
-      <div className="Container w-screen h-screen border border-red-500 flex justify-center items-center">
+      <div className="Container w-screen h-screen flex justify-center items-center">
         <div className="loader">
           <span className="loader-text text-4xl">loading...</span>
           <span className="load" />

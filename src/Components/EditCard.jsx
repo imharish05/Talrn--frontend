@@ -79,7 +79,7 @@ const EditDeveloper = () => {
       })
 
       fetchDevelopers();
-      navigate("/");
+      navigate("/dashboard");
     } catch (err) {
       console.error(err);
     }
