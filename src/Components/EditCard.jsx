@@ -153,7 +153,7 @@ const EditDeveloper = () => {
         <Button
           fullWidth
           style={{ color: "black" }}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/dashboard")}
         >
           Go to Dashboard
         </Button>

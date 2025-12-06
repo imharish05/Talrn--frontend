@@ -88,7 +88,7 @@ const Myform = () => {
           Submit
         </Button>
 
-        <Link to={"/"} className="text-center">
+        <Link to={"/dashboard"} className="text-center">
           <Button fullWidth style={{ color: "black" }}>
             Go to Dashboard
           </Button>

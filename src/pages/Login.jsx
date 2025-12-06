@@ -35,7 +35,7 @@ const Login = () => {
         theme: "light",
       });
 
-      navigate("/",{ replace: true });
+      navigate("/dashboard",{ replace: true });
     } catch (err) {
       const errMsg = err.response?.data?.message || "Logged in Failed";
       toast.error(`${errMsg}`, {

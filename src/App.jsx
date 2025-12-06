@@ -38,10 +38,10 @@ function App() {
         },
       });
       setDeveloper(res.data.developers);
-      setLoading(false)
+      setLoading(false);
     } catch (err) {
       console.log(err);
-      setLoading(false)
+      setLoading(false);
     }
   };
 
@@ -133,17 +133,18 @@ function App() {
         joiningDate,
         setJoiningDate,
         fetchDevelopers,
-        loading, setLoading
+        loading,
+        setLoading,
       }}
     >
       <ToastContainer limit={2} />
       <div className="App">
         <Routes>
-          <Route path="/signIn" element={<Signup></Signup>}></Route>
+          <Route path="/" element={<Signup></Signup>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
 
           <Route
-            path="/"
+            path="/dashboard"
             element={
               <ProtectedRoute>
                 <Dashboard></Dashboard>
