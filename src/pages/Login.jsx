@@ -1,9 +1,10 @@
 import { Button, TextField } from "@mui/material";
 import axios from "axios";
 import React, { useContext, useState } from "react";
-import { replace, useNavigate } from "react-router-dom";
+import { Link, replace, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import AuthContext from "../Context/AuthContext";
+
 
 const Login = () => {
 
@@ -79,6 +80,13 @@ const Login = () => {
         <Button variant="contained" size="small" type="submit">
           Submit
         </Button>
+
+                <p style={{ padding: "10px 0px" }}>
+          Don't have an account ?{" "}
+          <span className="cursor-pointer text-blue-500">
+            <Link to={"/"}>Register</Link>
+          </span>
+        </p>
       </form>
     </div>
   );
