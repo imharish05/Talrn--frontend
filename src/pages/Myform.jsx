@@ -1,6 +1,6 @@
 import react, { useContext } from "react";
 import { TextField, Button, MenuItem } from "@mui/material";
-import { myContext } from "./App.jsx";
+import { myContext } from "../App.jsx";
 import { Link } from "react-router-dom";
 
 const Myform = () => {
@@ -14,15 +14,23 @@ const Myform = () => {
     experience,
     setExperience,
     validateForm,
+    description,
+    setDescription,
+    joiningDate,
+    setJoiningDate,
+    fetchDevelopers,
   } = useContext(myContext);
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center mx-auto">
+    <div className="w-screen h-screen flex flex-col items-center justify-center">
       <form
-        onSubmit={(e) => validateForm(e)}
-        className="flex flex-col gap-4 bg-white p-10 rounded shadow-md w-full max-w-md"
+        onSubmit={(e) => {
+          validateForm(e)
+        }}
+        style={{ padding: "15px" }}
+        className="flex flex-col gap-5 bg-white rounded shadow-lg w-full max-w-md"
       >
-        <h1 className="text-4xl py-5 text-center">Add Developer</h1>
+        <h1 className="text-3xl py-5 text-center">ADD DEVELOPER</h1>
         <TextField
           label="Name"
           variant="outlined"
@@ -56,18 +64,34 @@ const Myform = () => {
             setExperience(e.target.value);
           }}
         />
-        <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          fullWidth
-        >
+        <TextField
+          label="Description"
+          type="string"
+          variant="outlined"
+          value={description}
+          onChange={(e) => {
+            setDescription(e.target.value);
+          }}
+        />
+        <TextField
+          label="Joining Date"
+          type="date"
+          variant="outlined"
+          InputLabelProps={{ shrink: true }}
+          value={joiningDate}
+          onChange={(e) => {
+            console.log(joiningDate);
+            setJoiningDate(e.target.value);
+          }}
+        />
+        <Button type="submit" variant="contained" color="primary" fullWidth>
           Submit
         </Button>
 
         <Link to={"/"} className="text-center">
-          <Button fullWidth
-          style={{color : "black"}}>Go to Dashboard</Button>
+          <Button fullWidth style={{ color: "black" }}>
+            Go to Dashboard
+          </Button>
         </Link>
       </form>
     </div>
