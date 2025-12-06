@@ -1,4 +1,4 @@
-Developer Directory App
+##    Developer Directory App
 
 A Full-Stack Developer Directory application built with React (frontend) and Node.js + Express + MongoDB (backend).
 The app allows users to add developers, view a developer directory, and search/filter by role or tech stack.
